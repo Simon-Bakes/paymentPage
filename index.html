@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <form action="">
+    <div class="container">
+        <div id="paymentCard">
+            <header>
+                Payment Details
+            </header>
+            <main>
+                <div id="cardContainer">
+                    <div id="cardTitle">ENTER CARD DETAILS</div>
+                    <div id="userInfo1">
+                        <div>
+                            First name
+                        </div>
+                        <div>
+                            Last name
+                        </div>
+                    </div>
+                    <div id="userInput1">
+                        <div>
+                            <input type="text" placeholder="John" required>
+                        </div>
+                        <div>
+                            <input type="text" placeholder="Doe" required>
+                        </div>
+                    </div>
+                    <div id="userInfo2">
+                        <div id="leftInfo">
+                            Card Number
+                        </div>
+                        <div id="rightInfo">
+                            CVV
+                        </div>
+                    </div>
+                    <div id="userInput2">
+                        <div id="leftCredit">
+                            <input type="text" placeholder="•••• •••• •••• ••••" id="creditCard" required>
+                        </div>
+                        <div id="rightCredit">
+                            <input type="text" placeholder="•••" id="cvv" required>
+                        </div>
+                    </div>
+                    <div id="paymentType">
+                        <div>
+                            <img src="visa.png" alt="visa">
+                            <img src="master.png" alt="masterCard" id="master">
+                            <img src="american.png" alt="americanExpress">
+                        </div>
+                    </div>
+                    <div id="userDate">
+                        <div id="expiryDate">
+                            Expiry Date
+                        </div>
+                        <div id="infoDates">
+                            <div>
+                                <input type="text" placeholder="MM" id="month" required>
+                                <p id="slashLol">/</p>
+                                <input type="text" placeholder="YY" id="year" required>
+                            </div>
+                        </div>
+                        <div id="total">Amount to pay: $109.35</div>
+                    </div>
+                    
+                    <div id="submit">
+                        <button>Submit</button>
+                    </div>
+                </div>
+            </main>
+        </div>
+    </form>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

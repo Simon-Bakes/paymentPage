@@ -1,0 +1,253 @@
+* {
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url(background.jpg);
+    background-size: cover;
+    position: fixed;
+}
+
+.container::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: inherit;
+    background-size: inherit;
+    background-position: center;
+    filter: blur(9px);
+    transform: scale(1.03);
+}
+
+#paymentCard {
+    width: 1000px;
+    height: 800px;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+header {
+    height: 10%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(47, 47, 47);
+    border-radius: 0.5vmax 0.5vmax 0 0;
+    color: white;
+    font-size: 2em;
+}
+
+main {
+    height: 90%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    border-radius: 0 0 0.5vmax 0.5vmax;
+}
+
+#cardContainer {
+    width: 80%;
+    height: 85%;
+}
+
+#cardTitle {
+    width: 100%;
+    height: 10%;
+    display: flex;
+    align-items: center;
+    font-size: 2.5em;
+    border-bottom: 1px solid black;
+}
+
+#userInfo1 {
+    width: 100%;
+    height: 6%;
+    display: flex;
+    margin-top: 20px;
+}
+
+#userInfo1 > div {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    font-size: 2em;
+}
+
+#userInput1 {
+    width: 100%;
+    height: 10%;
+    display: flex;
+}
+
+#userInput1 > div {
+    width: 50%;
+    height: 100%;
+}
+
+#userInput1 > div > input {
+    width: 80%;
+    height: 50%;
+    font-size: 1.8em;
+    border: 1px solid black;
+    border-radius: 0.3vmax;
+    padding-left: 8px;
+}
+
+#userInfo2 {
+    width: 100%;
+    height: 6%;
+    display: flex;
+}
+
+#leftInfo {
+    width: 70%;
+    height: 100%;
+    font-size: 2em;
+}
+
+#rightInfo {
+    width: 30%;
+    height: 100%;
+    font-size: 2em;
+}
+
+#userInput2 {
+    width: 100%;
+    height: 10%;
+    display: flex;
+}
+
+#leftCredit {
+    width: 70%;
+    height: 100%;
+}
+
+#rightCredit {
+    width: 30%;
+    height: 100%;
+}
+
+#userInput2 > div > input {
+    width: 80%;
+    height: 50%;
+    font-size: 1.8em;
+    border: 1px solid black;
+    border-radius: 0.3vmax;
+    padding-left: 8px;
+}
+
+#paymentType {
+    width: 100%;
+    height: 10%;
+}
+
+img {
+    width: 50px;
+    height: auto;
+}
+
+#userDate {
+    width: 100%;
+    height: 10%;
+    display: flex;
+}
+
+#expiryDate {
+    width: 15%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    font-size: 1.5em;
+}
+
+#infoDates {
+    width: 55%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+
+#infoDates > div {
+    width: 30%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+
+#infoDates > div > input {
+    width: 50%;
+    height: 50%;
+    margin: 10px;
+    font-size: 0.9em;
+}
+
+#slashLol {
+    font-size: 1.6em;
+}
+
+#total {
+    width: 30%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    font-size: 1.8em;
+}
+
+#submit {
+    width: 100%;
+    height: 10%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-top: 1px solid black;
+    margin-top: 20px;
+}
+
+button {
+    width: 50%;
+    height: 100%;
+    background-color: rgb(0, 171, 0);
+    border-radius: 0.5vmax;
+    border: none;
+    color: white;
+    font-size: 2em;
+    margin-top: 90px;
+    transition: 0.2s ease;
+}
+
+button:hover {
+    background-color: rgb(0, 102, 0);
+    cursor: pointer;
+}
+
+button:active {
+    background-color: rgb(0, 72, 0);
+    transform: scale(0.9);
+    color: rgb(193, 193, 193);
+}
+
+input.valid {
+    outline: 2px solid green;
+}
+  
+input.error {
+    outline: 2px solid red;
+}
